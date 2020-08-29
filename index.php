@@ -9,11 +9,23 @@
 
 <body>
     <?php
-        $color = "red";
-        echo "My car is " . $color . "<br>";
-        echo "My house is " . $color . "<br>";
-        echo "My boat is " . $color . "<br>";
-        echo("hola ");
+        class Municipio {
+            private $nombre;
+
+            public function __construct($nombre) {  
+                $this->nombre = $nombre;
+            }
+
+            public function showInfo() {
+                echo "Nombre: " . $this->nombre;
+            }
+
+        }
+
+        $guatemala = new Municipio("Guatemala");
+
+        $guatemala->showInfo();
+
     ?>
 </body>
 
