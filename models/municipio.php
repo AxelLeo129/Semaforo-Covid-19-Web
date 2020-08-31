@@ -15,61 +15,61 @@
          */
         public function __construct($nombre,$contagiados,$fallecidos,$recuperados,$poblacion,$establecimientos,$restricciones){  
             $this->nombre = $nombre;
-            $this->$contagiados=$contagiados;
-            $this->$fallecidos=$fallecidos;
-            $this->$recuperados=$recuperados;
-            $this->$poblacion =$poblacion;
-            $this->$establecimientos=$establecimientos;
-            $this->$restricciones=$restricciones;
+            $this->contagiados=$contagiados;
+            $this->fallecidos=$fallecidos;
+            $this->recuperados=$recuperados;
+            $this->poblacion =$poblacion;
+            $this->establecimientos=$establecimientos;
+            $this->restricciones=$restricciones;
         }
         /**
          * getters: Estos metodos nos ayudaran a obtener los valores de los atributos que indiquemos
          */
         public function getNombre(){
-            return $this->$nombre;
+            return $this->nombre;
         }
 
         public function getContagiados(){
-            return $this->$contagiados;
+            return $this->contagiados;
         }
         public function getFallecidos(){
-            return $this->$fallecidos;
+            return $this->fallecidos;
         }
         public function getRecuperados(){
-            return $this->$recuperados;
+            return $this->recuperados;
         }
         public function getPoblacion(){
-            return $this->$poblacion;
+            return $this->poblacion;
         }
         public function getEstablecimientos(){
-            return $this->$establecimientos;
+            return $this->establecimientos;
         }
         public function getRestricciones(){
-            return $this->$restricciones;
+            return $this->restricciones;
         }
         /**
          * setters: Estos metodo nos ayudara a poder asignarle valor a los atributos de la clase
          */
         public function setNombre($nombre){
-            $this->$nombre=$nombre;
+            $this->nombre=$nombre;
         }
         public function setContagiados($contagiados){
-            $this->$contagiados=$contagiados;
+            $this->contagiados=$contagiados;
         }
         public function setFallecidos($fallecidos){
-            $this->$fallecidos=$fallecidos;
+            $this->fallecidos=$fallecidos;
         }
         public function setRecuperados($recuperados){
-            $this->$recuperados=$recuperados;
+            $this->recuperados=$recuperados;
         }
         public function setPoblacion($poblacion){
-            $this->$poblacion=$poblacion;
+            $this->poblacion=$poblacion;
         }
         public function setEstablecimientos($establecimientos){
-            $this->$establecimientos=$establecimientos;
+            $this->establecimientos=$establecimientos;
         }
         public function setRestricciones($restricciones){
-            $this->$restricciones=$restricciones;
+            $this->restricciones=$restricciones;
         }
     }
 

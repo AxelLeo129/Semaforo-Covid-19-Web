@@ -10,20 +10,21 @@ class Departamento{
     /**
      * Constructor de la clase Departamento
      */
+
     public function __constructor($nombre,$municipios,$color,$porcentaje_contagios){
-        $this->$nombre=$nombre;
-        $this->$municipios=$municipios;
-        $this->$color=$color;
-        $this->$porcentaje_contagios=$porcentaje_contagios;
+        $this->nombre=$nombre;
+        $this->municipios=$municipios;
+        $this->color=$color;
+        $this->porcentaje_contagios=$porcentaje_contagios;
     }
     /**
      * getters: Estos metodos me ayudaran a poder obtener los valores del los atributos
      */
     public function getNombre(){
-        return $this->$nombre;
+        return $this->nombre;
     }
     public function getListadoMunicipios(){
-        return $this->$municipios;
+        return $this->municipios;
         //o
         /**
          * $lista=[];
@@ -35,21 +36,21 @@ class Departamento{
     }
     public function getPoblacion(){
         $poblacion=0;
-        foreach($municipios as $municipio){
+        foreach($this->municipios as $municipio){
             $poblacion+=$municipio->getPoblacion();
         }
         return $poblacion;
     }
     public function getContagiados(){
         $contagios=0;
-        foreach($municipios as $municipio){
+        foreach($this->municipios as $municipio){
             $contagios+=$municipio->getContagiados();
         }
         return $contagios;
     }
     public function getListadoEstablecimientos(){
         $lista_establecimientos=[];
-        foreach($municipios as $municipio){
+        foreach($this->municipios as $municipio){
             foreach($municipio->getEstablecimientos() as $establecimiento){
                 array_push($lista_establecimientos,$establecimiento);
             }
