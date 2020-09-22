@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="w-75 p-3 container">
+    <div class="w-50 p-3 container">
         <h3>Noticias Covid-19</h3>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
