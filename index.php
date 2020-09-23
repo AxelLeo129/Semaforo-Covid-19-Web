@@ -11,6 +11,8 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>Semáforo Covid-19</title>
+    <link rel="shortcut icon" href="src/icono.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="src/icono.png">
 
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
@@ -19,6 +21,9 @@
 </head>
 
 <body>
+    <div style="background: url('src/fondo.jpg'); width:800px; height: 800px;">
+    
+    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Inicio</a>
@@ -151,6 +156,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    </div>
 </body>
 
 </html>
