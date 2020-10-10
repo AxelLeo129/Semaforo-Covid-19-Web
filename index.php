@@ -60,7 +60,7 @@
         </div>
     </nav>
 
-    <h1 class="p-3">Semáforo Covid-19</h1>
+    <h1 class="p-3">Semáforo Covid-20</h1>
 
     <div class="container p-3">
         <div class="row">
