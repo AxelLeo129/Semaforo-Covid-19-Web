@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div style="background: url('src/fondo.jpg'); width:800px; height: 800px;">
+    <!-- <div style="background: url('src/fondo.jpg'); width:800px; height: 800px;"> -->
     
     
 
@@ -60,7 +60,7 @@
         </div>
     </nav>
 
-    <h1 class="p-3">Semáforo Covid-19</h1>
+    <h1 class="p-3">Semáforo Covid-20</h1>
 
     <div class="container p-3">
         <div class="row">
@@ -156,7 +156,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-    </div>
 </body>
 
 </html>
