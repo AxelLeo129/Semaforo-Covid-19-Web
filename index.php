@@ -13,10 +13,6 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="assets/logo.png">
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
-
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
 
@@ -25,12 +21,8 @@
 </head>
 
 <body>
-    <!-- <div style="background: url('src/fondo.jpg'); width:800px; height: 800px;"> -->
-
-    <nav id="menu" class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top"
-        style="background: black !important;">
-        <img class="img-fluid img-navbar" src="assets/logo.png" style="width: 260px; height: 90px;" alt="" />
-        <a class="navbar-brand" href="#">Inicio</a>
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <img class="img-fluid img-navbar" src="assets/logo.png" style="width: 260px; height: 90px;" alt="" />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,57 +30,38 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li> -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Noticias</a>
+                    <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mapa
+                        Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Departamentos</a>
-                        <a class="dropdown-item" href="#">Municipios</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Establecimientos</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
 
-    <br><br>
-    <br>
-    <br>
 
-    <br>
-    <br>
-    <br>
-
-    <section>
-        <h1 class="p-3">Semáforo Covid-20</h1>
-
-        <div class="container p-3">
-            <div class="row">
-                <div class="jumbotron">
-                    <h1 class="display-4">¡Bienvenidos!</h1>
-                    <p class="lead">Mantente informado sobre el avance del virus dentro del país, así como las
-                        medidas de prevención y el estado de los Establecimientos activos durante la pandemia.</p>
-                    <hr class="my-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, optio nemo laboriosam
-                        nesciunt pariatur atque non delectus? Maiores, fuga odit dolore veniam odio placeat, quis
-                        ipsa, ducimus vero quod libero.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Página del gobierno</a>
-                </div>
-            </div>
-        </div>
+    <section class="wellcome">
+        
     </section>
 
     <section>
@@ -201,7 +174,8 @@
                     <div class="carousel-item">
                         <a target="_blank"
                             href="https://www.prensalibre.com/guatemala/comunitario/coronavirus-en-guatemala-salud-reporta-233-casos-nuevos-de-covid-19-y-12-fallecidos-mas-breaking/">
-                            <img style="filter: grayscale(50%);" src="https://www.prensalibre.com/wp-content/uploads/2020/08/coronavirus-en-guatemala-1.jpg?quality=82&w=742&h=430&crop=1"
+                            <img style="filter: grayscale(50%);"
+                                src="https://www.prensalibre.com/wp-content/uploads/2020/08/coronavirus-en-guatemala-1.jpg?quality=82&w=742&h=430&crop=1"
                                 class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Coronavirus en Guatemala: Salud reporta 233 casos nuevos de covid-19 y 12 fallecidos
@@ -217,7 +191,8 @@
                     <div class="carousel-item active">
                         <a href="https://crnnoticias.com/los-casos-de-covid-19-en-guatemala-llegan-a-73-mil-912/"
                             target="_blank">
-                            <img style="filter: grayscale(50%);" src="https://i1.wp.com/crnnoticias.com/wp-content/uploads/2020/08/6dafd6d4d3e4034d5ff93462be13c758dac3234fw.jpg?w=900&ssl=1"
+                            <img style="filter: grayscale(50%);"
+                                src="https://i1.wp.com/crnnoticias.com/wp-content/uploads/2020/08/6dafd6d4d3e4034d5ff93462be13c758dac3234fw.jpg?w=900&ssl=1"
                                 class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Los casos de COVID-19 en Guatemala llegan a 73 mil 912</h5>
@@ -231,7 +206,8 @@
                     <div class="carousel-item">
                         <a href="https://dca.gob.gt/noticias-guatemala-diario-centro-america/reportan-233-casos-nuevos-de-covid-19/"
                             target="_blank">
-                            <img style="filter: grayscale(50%);" src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2020/08/casos-covid19-30Agosto2020.jpg"
+                            <img style="filter: grayscale(50%);"
+                                src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2020/08/casos-covid19-30Agosto2020.jpg"
                                 class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="text-dark">Reportan 233 casos nuevos de Covid-19</h5>

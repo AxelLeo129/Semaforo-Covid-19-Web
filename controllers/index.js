@@ -1,20 +1,8 @@
-$(window).scroll(function () {
+$(window).scroll(function() {
+    //console.log($("#menu").offset().top);
     if ($("#menu").offset().top > 56) {
-        $("#menu").addClass("bg-inverse");
+        $("#menu").addClass("bg-dark");
     } else {
-        $("#menu").removeClass("bg-inverse");
+        $("#menu").removeClass("bg-dark");
     }
-});
-
-var map = new ol.Map({
-    target: 'map',
-    layers: [
-        new ol.layer.Tile({
-            source: new ol.source.OSM()
-        })
-    ],
-    view: new ol.View({
-        center: ol.proj.fromLonLat([-90.40, 15.80]),
-        zoom: 7
-    })
-});
+  });
