@@ -5,6 +5,7 @@ $(document).ready(function () {
       "url": "https://sistemaalertacovid-19.segeplan.gob.gt//covid-19/Datos.ashx?term=0&pp=6&{}",
       "dataSrc": ""
     },
+    "responsive": true,
     "columns": [{
         "data": "DEPARTAMENTO"
       },

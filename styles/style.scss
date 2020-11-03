@@ -1,0 +1,69 @@
+.title {
+    align-items: center;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.img-navbar {
+    height: 350px;
+    width: auto;
+}
+
+a {
+    color: white !important;
+}
+
+.bg-primary {
+    transition: all 1s ease;
+}
+
+.billboard {
+    /*height: 620px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/fondo.jpg');
+    position: relative;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/fondo.jpg") center center/cover no-repeat fixed;
+    background-position: center center;
+    height: 1000px;
+    width: 100%
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 100%;
+    height: 200px;
+    margin-left: -200px;
+    margin-top: -29px;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 50px;
+}
+
+.center-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-img {
+
+    max-width: 800px;
+
+    @media screen and (max-width: 420px) {
+        max-width: 350px;
+    }
+}
