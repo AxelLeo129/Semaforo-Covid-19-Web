@@ -23,218 +23,605 @@
 </head>
 
 <body>
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <img class="img-fluid img-navbar" src="assets/logo.png" style="width: 260px; height: 90px;" alt="" />
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+    <!--Main Navigation-->
+    <header>
 
+        <!--Navbar-->
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
 
+            <div class="container">
 
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#intro">
+                    <img class="img-fluid img-navbar logo-img" src="assets/logo.png" alt="" />
+                </a>
 
-    <section>
-        <div class="billboard">
-            <div class="text-wrapper">
-                <h1>SAMPLE TEXT</h1>
-            </div>
-        </div>
-    </section>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <section>
-        <div class="container">
-            <h3>Mapa de Guatemala</h3>
-            <div align="center">
-                <img src="assets/mapa_guatemala.jpg" usemap="#workmap" class="map-img" alt="...">
-                <map name="workmap">
-                    <area onclick="getData('El%20Peten')" alt="El Petén" title="El Petén"
-                        coords="232,205,223,167,204,158,192,129,130,81,176,80,176,19,363,20,358,217,339,226,315,222,298,221,273,212,252,205"
-                        shape="poly">
-                    <area onclick="getData('Huehuetenango')" alt="Huehuetenango" title="Huehuetenango"
-                        coords="93,204,55,280,67,286,89,281,104,293,111,300,122,303,127,303,127,292,135,291,143,288,148,284,143,273,132,262,136,254,143,251,153,243,156,230,161,221,165,203"
-                        shape="poly">
-                    <area onclick="getData('Quiche')" alt="Quiché" title="Quiché"
-                        coords="167,205,227,203,227,209,215,213,207,209,195,217,195,225,192,235,193,241,201,249,211,253,215,260,208,268,214,277,222,280,230,284,222,294,207,292,195,297,199,305,203,317,204,329,191,322,179,321,171,335,161,337,150,333,146,321,149,311,139,305,131,301,133,292,143,290,149,287,151,279,140,270,136,261,149,250,157,241,159,225"
-                        shape="poly">
-                    <area onclick="getData('Alta%20Verapaz')" alt="Alta Verapáz" title="Alta Verapáz"
-                        coords="335,227,322,237,323,243,311,260,320,268,315,276,315,285,317,296,311,301,299,301,289,301,283,305,285,291,278,287,252,289,244,286,236,289,231,281,215,277,210,267,215,257,202,246,193,237,196,227,198,216,206,213,222,213,227,209,234,206"
-                        shape="poly">
-                    <area onclick="getData('Baja%20Verapaz')" alt="Baja Verapáz" title="Baja Verapáz"
-                        coords="234,333,281,305,281,293,267,290,252,290,243,287,238,291,228,288,223,296,199,295,202,306,203,319,207,327,221,331"
-                        shape="poly">
-                    <area onclick="getData('Izabal')" alt="Izabal" title="Izabal"
-                        coords="417,218,442,228,449,235,458,243,467,245,479,238,448,248,442,258,432,265,422,272,411,279,398,289,387,300,375,305,362,311,361,298,361,289,347,286,332,292,319,297,316,276,320,269,313,261,323,244,335,230,347,221,364,221,379,221,386,225,399,227,405,233,412,243,419,235,421,229,427,225"
-                        shape="poly">
-                    <area onclick="getData('Zacapa')" alt="Zacapa" title="Zacapa"
-                        coords="288,305,292,314,296,326,303,330,298,336,298,343,303,347,304,341,311,333,320,331,327,332,338,332,348,329,355,324,361,314,357,302,359,293,346,287,331,295,324,300,311,300,299,302"
-                        shape="poly">
-                    <area onclick="getData('Chiquimula')" alt="Chiquimula" title="Chiquimula"
-                        coords="361,323,355,334,363,351,360,362,351,367,343,376,340,382,349,386,325,382,329,374,322,370,309,368,314,360,303,349,308,336,313,331,327,336,340,331"
-                        shape="poly">
-                    <area onclick="getData('El%20Progreso')" alt="El Progreso" title="El Progreso"
-                        coords="237,334,239,347,247,356,255,354,271,346,290,338,296,333,292,314,283,307,262,318"
-                        shape="poly">
-                    <area onclick="getData('Jalapa')" alt="Jalapa" title="Jalapa"
-                        coords="250,358,246,368,239,371,242,379,251,378,259,374,270,382,279,378,289,385,295,377,308,374,311,362,303,350,294,346,299,338,273,350"
-                        shape="poly">
-                    <area onclick="getData('Jutiapa')" alt="Jutiapa" title="Jutiapa"
-                        coords="261,453,261,446,266,440,274,432,282,425,287,422,296,423,303,410,325,401,315,391,322,387,325,377,319,370,310,371,304,378,295,378,295,387,286,385,283,378,276,382,267,390,259,401,267,406,263,414,246,422,246,432,250,447"
-                        shape="poly">
-                    <area onclick="getData('Santa%20Rosa')" alt="Santa Rosa" title="Santa Rosa"
-                        coords="249,447,221,438,206,433,206,423,213,418,211,406,214,398,223,392,227,378,235,378,240,382,246,380,253,376,260,378,267,383,260,396,266,409,255,418,244,423,248,437"
-                        shape="poly">
-                    <area onclick="getData('Guatemala')" alt="Guatemala" title="Guatemala"
-                        coords="203,342,207,333,215,331,222,331,231,332,238,340,242,356,248,357,244,366,237,373,227,374,224,388,211,386,201,381,207,370"
-                        shape="poly">
-                    <area onclick="getData('Sacatepequez')" alt="Sacatepequez" title="Sacatepequez"
-                        coords="181,370,190,364,195,354,200,349,206,362,203,375,193,380,189,385" shape="poly">
-                    <area onclick="getData('Escuintla')" alt="Escuintla" title="Escuintla"
-                        coords="111,422,120,406,124,399,134,398,142,404,155,400,156,391,160,385,169,384,179,381,187,386,198,379,204,386,211,391,219,394,209,400,209,416,207,426,204,434,171,437,147,436,127,432"
-                        shape="poly">
-                    <area onclick="getData('Chimaltenango')" alt="Chimaltenango" title="Chimaltenango"
-                        coords="165,347,161,340,172,334,178,324,190,324,197,327,206,330,201,336,202,346,195,352,188,365,179,369,179,376,174,381,165,381,158,383,158,369,159,361"
-                        shape="poly">
-                    <area onclick="getData('Solola')" alt="Sololá" title="Sololá"
-                        coords="122,337,122,347,127,354,132,358,139,361,141,370,146,371,155,372,157,362,159,353,163,347,157,338,141,336"
-                        shape="poly">
-                    <area onclick="getData('Totonicapan')" alt="Totonicapán" title="Totonicapán"
-                        coords="113,305,111,316,117,322,123,333,136,335,146,334,146,326,140,313,146,311,135,306"
-                        shape="poly">
-                    <area onclick="getData('Suchitepequez')" alt="Suchitepéquez" title="Suchitepéquez"
-                        coords="109,357,107,369,104,377,108,385,99,411,111,423,120,403,135,397,142,403,151,398,152,390,155,381,153,374,135,363,125,356,120,349"
-                        shape="poly">
-                    <area onclick="getData('Retalhuleu')" alt="Retalhuleu" title="Retalhuleu"
-                        coords="96,411,105,397,104,382,103,376,107,367,107,360,100,364,92,358,83,368,73,371,62,370,51,376,67,394"
-                        shape="poly">
-                    <area onclick="getData('Quetzaltenango')" alt="Quetzaltenango" title="Quetzaltenango"
-                        coords="56,358,61,351,73,351,87,350,87,340,95,329,101,320,103,299,111,299,107,311,114,319,120,337,120,348,103,363,93,355,86,363,79,371,66,368"
-                        shape="poly">
-                    <area onclick="getData('San%20Marcos')" alt="San Marcos" title="San Marcos"
-                        coords="47,293,54,280,63,285,80,281,91,282,105,298,101,303,102,318,95,324,85,349,63,350,55,357,63,366,54,374,44,366,52,347,52,335,55,321,62,312"
-                        shape="poly">
-                </map>
-            </div>
-            <div>
-                <table id="example" class="display" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Departamento</th>
-                            <th>Municipio</th>
-                            <th>Población</th>
-                            <th>Total de Tamizajes</th>
-                            <th>Casos Confirmados</th>
-                            <th>% de positividad</th>
-                            <th>Puntaje testeo</th>
-                            <th>Puntaje pruebas positivas</th>
-                            <th>Puntaje total</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-        </div>
-    </section>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" align="right" id="basicExampleNav">
 
-    <section>
-        <div class="w-50 p-3 container">
-            <h3>Noticias Covid-19</h3>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <a target="_blank"
-                            href="https://www.prensalibre.com/guatemala/comunitario/coronavirus-en-guatemala-salud-reporta-233-casos-nuevos-de-covid-19-y-12-fallecidos-mas-breaking/">
-                            <img style="filter: grayscale(50%);"
-                                src="https://www.prensalibre.com/wp-content/uploads/2020/08/coronavirus-en-guatemala-1.jpg?quality=82&w=742&h=430&crop=1"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Coronavirus en Guatemala: Salud reporta 233 casos nuevos de covid-19 y 12 fallecidos
-                                    más
-                                </h5>
-                                <p>Los casos de coronavirus detectados en Guatemala llegan 73 mil 912
-                                    y
-                                    dos mil 740 personas
-                                    fallecidas.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item active">
-                        <a href="https://crnnoticias.com/los-casos-de-covid-19-en-guatemala-llegan-a-73-mil-912/"
-                            target="_blank">
-                            <img style="filter: grayscale(50%);"
-                                src="https://i1.wp.com/crnnoticias.com/wp-content/uploads/2020/08/6dafd6d4d3e4034d5ff93462be13c758dac3234fw.jpg?w=900&ssl=1"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Los casos de COVID-19 en Guatemala llegan a 73 mil 912</h5>
-                                <p>Los casos de COVID-19 en Guatemala llegaron este domingo a 73 mil 912 y las muertes a
-                                    2
-                                    mil
-                                    740, según datos del Ministerio de Salud Pública.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://dca.gob.gt/noticias-guatemala-diario-centro-america/reportan-233-casos-nuevos-de-covid-19/"
-                            target="_blank">
-                            <img style="filter: grayscale(50%);"
-                                src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2020/08/casos-covid19-30Agosto2020.jpg"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-dark">Reportan 233 casos nuevos de Covid-19</h5>
-                                <p class="text-dark">El Ministerio de Salud Pública y Asistencia Social (MSPAS) informó
-                                    que
-                                    el sábado se
-                                    obtuvo el
-                                    registro de 233 nuevos casos de Covid-19 en el país.</p>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- Links -->
+                    <ul id="ul" class="navbar-nav mr-auto smooth-scroll nav menu">
+                        <li class="nav-item item-102 parent">
+                            <a href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item item-102 parent">
+                            <a href="#best-features">Features</a>
+                        </li>
+                        <li class="nav-item item-102 parent">
+                            <a href="#examples">Examples</a>
+                        </li>
+                        <li class="nav-item item-102 parent">
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item item-102 parent">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
-                </a>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Mask-->
+        <div id="intro" class="view">
+
+            <div class="mask rgba-black-strong">
+
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                    <div class="row d-flex justify-content-center text-center">
+
+                        <div class="col-md-10 top-margin">
+
+                            <!-- Heading -->
+                            <h1 class="display-4 font-weight-bold white-text pt-5 mb-2">Semaforo Covid - 19</h1>
+
+                            <!-- Divider -->
+                            <hr class="hr-light">
+
+                            <!-- Description -->
+                            <h3 id="words" class="white-text my-4">Informadon sobre:</h3>
+                            <button type="button" class="btn btn-outline-white">Read more<i
+                                    class="fa fa-book ml-2"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--/.Mask-->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+        <div class="container">
+
+            <!--Section: Best Features-->
+            <section id="best-features" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold">Best Features</h2>
+
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-8">
+
+                        <!-- Description -->
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
+                            hic
+                            provident nulla repellat
+                            facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
+                            est
+                            sit pariatur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-5">
+                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Experience</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-heart fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Happiness</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-bicycle fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Adventure</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Best Features-->
+
+            <hr class="my-5">
+
+            <!--Section: Examples-->
+            <section id="examples" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold">Stunning Examples</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="view overlay z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
+                            <div class="mask rgba-white-slight"></div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                            maiores nam,
+                            aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Examples-->
+
+            <hr class="my-5">
+
+            <!--Section: Gallery-->
+            <section id="gallery">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold text-center">Gallery heading</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade"
+                            data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner z-depth-1-half" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100"
+                                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                                        alt="First slide">
+                                </div>
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                                        alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                                        alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-1z" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--/.Carousel Wrapper-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+
+                        <!--Excerpt-->
+                        <a href="" class="teal-text">
+                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
+                        </a>
+                        <h4 class="mb-3"><strong>This is title of the news</strong></h4>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis
+                            debitis aut rerum.</p>
+
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis
+                            debitis aut rerum.</p>
+                        <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
+                        <a class="btn btn-primary btn-md">Read more</a>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Gallery-->
+
+            <hr class="my-5">
+
+            <!--Section: Contact-->
+            <section id="contact">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12">
+                        <!-- Form contact -->
+                        <form class="p-5 grey-text">
+                            <div class="md-form form-sm"> <i class="fa fa-user prefix"></i>
+                                <input type="text" id="form3" class="form-control form-control-sm">
+                                <label for="form3">Your name</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-envelope prefix"></i>
+                                <input type="text" id="form2" class="form-control form-control-sm">
+                                <label for="form2">Your email</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-tag prefix"></i>
+                                <input type="text" id="form32" class="form-control form-control-sm">
+                                <label for="form34">Subject</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-pencil prefix"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm"
+                                    rows="4"></textarea>
+                                <label for="form8">Your message</label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                            </div>
+                        </form>
+                        <!-- Form contact -->
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-md-12">
+
+                        <!--Grid row-->
+                        <div class="row text-center">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 mb-3">
+
+                                <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>New York, NY 10012</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p><i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon - Fri, 8:00-22:00</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>+ 01 234 567 89</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Contact-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
             </div>
         </div>
-    </section>
+        <!-- Social buttons -->
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Company name</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Products</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home"></i></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
