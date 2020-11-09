@@ -3,10 +3,11 @@ body,
 header,
 #intro {
   height: 100%;
+  font-family: sans-serif;
 }
 
 #intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/fondo.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/fondo.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,31 +35,25 @@ h4 {
   margin: 0;
   text-align: center;
   color: white;
-  font-family: arial;
-  font-size: 50px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 62px;
 }
 
 .top-margin {
-  top: 200px;
+  top: 220px;
 }
 @media screen and (max-width: 420px) {
   .top-margin {
-    top: 150px;
+    top: 170px;
   }
 }
 
 .img-navbar {
   height: 350px;
   width: auto;
-}
-
-.map-img {
-  max-width: 800px;
-}
-@media screen and (max-width: 420px) {
-  .map-img {
-    max-width: 350px;
-  }
 }
 
 .logo-img {
@@ -72,7 +67,105 @@ h4 {
   }
 }
 
+.button {
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  color: #28a9e2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.map-img {
+  max-width: 800px;
+}
+@media screen and (max-width: 420px) {
+  .map-img {
+    max-width: 350px;
+  }
+}
+
+.img-news {
+  height: 500px;
+  filter: brightness(0.8);
+}
+@media screen and (max-width: 420px) {
+  .img-news {
+    height: 300px;
+  }
+}
+
+.h4-news {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.p-new {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-cards {
+  height: 230px;
+  width: 350px;
+  filter: brightness(0.8);
+}
+@media screen and (max-width: 420px) {
+  .img-cards {
+    height: 230px;
+  }
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.dinamic-text {
+  font-weight: bold;
+}
+
+.ml11 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 .menu {
+  font-family: sans-serif;
   clear: both;
   float: left;
   margin-top: 1em;
@@ -97,7 +190,6 @@ ul.menu {
   background-color: #FFFFFF;
   color: #28a9e2;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -110,9 +202,8 @@ ul.menu {
 
 .menu li a {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   padding: 0.7em 1em 0.7em 1em;
@@ -124,7 +215,6 @@ ul.menu {
   border-radius: 100px 100px 0px 100px;
   background-color: #FFFFFF;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -136,6 +226,7 @@ ul.menu {
 }
 
 .menu2 {
+  font-family: sans-serif;
   clear: both;
   float: left;
   margin-top: 1em;
@@ -160,7 +251,6 @@ ul.menu2 {
   background-color: #28a9e2;
   color: #FFFFFF;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -173,9 +263,8 @@ ul.menu2 {
 
 .menu2 li a {
   color: #28a9e2;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   padding: 0.7em 1em 0.7em 1em;
@@ -187,7 +276,6 @@ ul.menu2 {
   border-radius: 100px 100px 0px 100px;
   background-color: #28a9e2;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
 }
 

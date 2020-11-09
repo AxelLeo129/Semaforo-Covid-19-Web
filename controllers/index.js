@@ -14,13 +14,3 @@ $(window).scroll(function () {
 $('.carousel').carousel({
     interval: 3000,
 });
-
-/*$(function() {
-    changeword();
-
-    function changeword() {
-       setTimeout(() => {
-
-       }, 5000);
-    }
-});*/
