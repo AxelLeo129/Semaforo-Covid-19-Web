@@ -67,7 +67,7 @@
     <section>
         <div class="billboard">
             <div class="text-wrapper">
-                <h1>SAMPLE TEXT</h1>
+                <!--<h1>SAMPLE TEXT</h1>-->
             </div>
         </div>
     </section>
