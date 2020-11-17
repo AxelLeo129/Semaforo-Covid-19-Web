@@ -37,6 +37,15 @@
 
             <div class="container">
 
+<<<<<<< HEAD
+    <section>
+        <div class="billboard">
+            <div class="text-wrapper">
+                <!--<h1>SAMPLE TEXT</h1>-->
+            </div>
+        </div>
+    </section>
+=======
                 <!-- Navbar brand -->
                 <a class="navbar-brand" href="#intro">
                     <img class="img-fluid img-navbar logo-img" src="assets/logo.png" alt="" />
@@ -69,6 +78,7 @@
                     <!-- Links -->
                 </div>
                 <!-- Collapsible content -->
+>>>>>>> 0f2a9a1f8879b8873ae9a9a66823723860282883
 
             </div>
 
