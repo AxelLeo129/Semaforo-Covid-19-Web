@@ -2,28 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="description" content="Mapa Interactivo, Guatemala, Noticias, Covid-19">
-    <meta name="keywords" content="Mapa Interactivo, Guatemala, Noticias, Covid-19">
-    <meta name="author" content="AxelLeo129">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- header -->
+    <?php include('configuration/header_config.php'); ?>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Semáforo Covid-19</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/logo.png">
+    <?php include('configuration/styles.php'); ?>
 
     <!-- Datatables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css">
+    <?php include('configuration/datatables_styles.php'); ?>
 
     <!-- Persalizados -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <title>Semáforo Covid-19</title>
 
 </head>
 
@@ -37,15 +31,6 @@
 
             <div class="container">
 
-<<<<<<< HEAD
-    <section>
-        <div class="billboard">
-            <div class="text-wrapper">
-                <!--<h1>SAMPLE TEXT</h1>-->
-            </div>
-        </div>
-    </section>
-=======
                 <!-- Navbar brand -->
                 <a class="navbar-brand" href="#intro">
                     <img class="img-fluid img-navbar logo-img" src="assets/logo.png" alt="" />
@@ -78,7 +63,6 @@
                     <!-- Links -->
                 </div>
                 <!-- Collapsible content -->
->>>>>>> 0f2a9a1f8879b8873ae9a9a66823723860282883
 
             </div>
 
@@ -374,11 +358,14 @@
                                 la información necesaria.
                             </p>
 
-                            <button type="button" class="btn btn-secondary">Regístrate</button>&nbsp;o&nbsp;<button
-                                type="button" class="btn btn-primary">
-                                <a href="/semaforo-covid-web/login.php" style="color: white;">Inicia Sesión</a>
-                            </button>
-
+                            <button type="button" class="btn btn-info">Ver Establecimientos</button>
+                            <br>
+                            <br>
+                            <a class="btn btn-secondary" href="/semaforo-covid-web/views/register.php"
+                                style="color: white;">Regístrate</a>
+                            &nbsp;o&nbsp;
+                            <a class="btn btn-primary" href="/semaforo-covid-web/views/login.php"
+                                style="color: white;">Inicia Sesión</a>
                             <!---- <a href="#" class="sim-btn hvr-bounce-to-top"><span></span></a>-->
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
@@ -483,9 +470,6 @@
                         <li>
                             <a href="https://www.guatemala.gob.gt/">Gobierno de Guatemala</a>
                         </li>
-                        <li>
-                            <a href="https://github.com/AxelLeo129">Autor: AxelLeo129</a>
-                        </li>
                     </ul>
 
                 </div>
@@ -502,12 +486,11 @@
         <!-- Call to action -->
         <ul class="list-unstyled list-inline text-center py-2">
             <li class="list-inline-item">
-                <button type="button" class="btn btn-secondary">Regístrate</button>&nbsp; o
+                <a href="/semaforo-covid-web/views/register.php" style="color: white;" class="btn btn-secondary">Regístrate</a>&nbsp; o
             </li>
             <li class="list-inline-item">
-                <button type="button" class="btn btn-primary">
-                    <a href="/semaforo-covid-web/login.php" style="color: white;">Inicia Sesión</a>
-                </button>
+                <a class="btn btn-primary" href="/semaforo-covid-web/views/login.php" style="color: white;">Inicia
+                    Sesión</a>
             </li>
         </ul>
         <!-- Call to action -->
@@ -523,20 +506,10 @@
     </footer>
     <!-- Footer -->
 
-    <!-- Optional JavaScript -->
-
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <?php include('configuration/scripts.php'); ?>
     <!-- Datables -->
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js">
-    </script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
-    </script>
-    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js">
-    </script>
+    <?php include('configuration/datatables_scripts.php'); ?>
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
