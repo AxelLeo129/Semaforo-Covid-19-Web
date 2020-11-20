@@ -37,7 +37,7 @@
                                     form.classList.add('was-validated');
                                     sweetAlert('¡Atención!', 'Este email ya está registrado.');
                                 } else { 
-                                    location.href = "/semaforo-covid-web/views/places.php";
+                                    location.href = "/semaforo-covid-web/views/new_edit.php";
                                 }
                             }
                         })

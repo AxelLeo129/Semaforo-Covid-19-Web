@@ -16,6 +16,10 @@ header,
     background-size: cover;
 }
 
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://editorial01.shutterstock.com/wm-preview-1500/10617841a/0decd41a/people-ware-masks-at-a-market-in-bali-denpasar-indonesia-shutterstock-editorial-10617841a.jpg) no-repeat center center fixed !important;
+}
+
 .top-nav-collapse {
     background-color: #60646B;
 }
@@ -111,7 +115,7 @@ h1 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .img-cards {
