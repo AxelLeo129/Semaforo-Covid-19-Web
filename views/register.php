@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- header -->
     <?php include('../configuration/header_config.php'); ?>
@@ -26,10 +25,10 @@
                     <div class="card-body">
                         <img class="card-img-top" src="../assets/logo.png" alt="Logo">
                         <h5 class="card-title text-center font-weight-bold">Registro</h5>
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" novalidate action="register.php" method="POST" method="post">
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                                    aria-describedby="basic-addon2" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    aria-label="Email" aria-describedby="basic-addon2" required>
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">@</span>
                                 </div>
@@ -38,8 +37,9 @@
                                 </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input id="pass" type="password" class="form-control" placeholder="Contraseña"
-                                    aria-label="Contraseña" aria-describedby="basic-addon2" required>
+                                <input id="pass" type="password" name="password" class="form-control"
+                                    placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon2"
+                                    required>
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">🔐</span>
                                 </div>
@@ -62,12 +62,12 @@
                                     <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarme</button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <button class="btn btn-lg btn-light btn-block btn-sm">Ya tengo una cuenta</button>
-                                </div>
-                            </div>
                         </form>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-lg btn-light btn-block btn-sm" onclick="navigateToLogin()">Ya tengo una cuenta</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

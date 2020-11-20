@@ -8,24 +8,54 @@
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
                 if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
+                    form.classList.add('was-validated');
                 } else {
                     if (pass.value != conf.value) {
-                        event.preventDefault();
-                        event.stopPropagation();
                         pass.value = "";
                         conf.value = "";
-                        Swal.fire({
-                            icon: 'warning',
-                            title: '¡Atención!',
-                            text: 'Las contraseñas no coinciden.',
-                        });
+                        form.classList.add('was-validated');
+                        sweetAlert('¡Atención!', 'Las contraseñas no coinciden.');
+                    } else {
+                        let email = document.getElementById('email');
+                        $.ajax({
+                            url: '../configuration/signup.php',
+                            type: 'POST',
+                            datatype: 'json',
+                            data: {
+                                email: email.value,
+                                password: pass.value
+                            },
+                            success: function(data) {
+                                console.log(data);
+                                if(data == "null") {
+                                    email.value = "";
+                                    conf.value = "";
+                                    pass.value = "";
+                                    form.classList.add('was-validated');
+                                    sweetAlert('¡Atención!', 'Este email ya está registrado.');
+                                } else { 
+                                    location.href = "/semaforo-covid-web/views/places.php";
+                                }
+                            }
+                        })
                     }
                 }
-                form.classList.add('was-validated');
             }, false);
         });
     }, false);
 })();
+
+function navigateToLogin() {
+    location.href = "/semaforo-covid-web/views/login.php";
+}
+
+function sweetAlert(title, text) {
+    Swal.fire({
+        icon: 'warning',
+        title,
+        text,
+    });
+}

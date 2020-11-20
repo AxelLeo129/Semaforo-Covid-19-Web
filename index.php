@@ -9,7 +9,9 @@
     <?php include('configuration/styles.php'); ?>
 
     <!-- Datatables -->
-    <?php include('configuration/datatables_styles.php'); ?>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css">
 
     <!-- Persalizados -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -486,7 +488,8 @@
         <!-- Call to action -->
         <ul class="list-unstyled list-inline text-center py-2">
             <li class="list-inline-item">
-                <a href="/semaforo-covid-web/views/register.php" style="color: white;" class="btn btn-secondary">Regístrate</a>&nbsp; o
+                <a href="/semaforo-covid-web/views/register.php" style="color: white;"
+                    class="btn btn-secondary">Regístrate</a>&nbsp; o
             </li>
             <li class="list-inline-item">
                 <a class="btn btn-primary" href="/semaforo-covid-web/views/login.php" style="color: white;">Inicia
@@ -509,7 +512,9 @@
     <!-- JQuery -->
     <?php include('configuration/scripts.php'); ?>
     <!-- Datables -->
-    <?php include('configuration/datatables_scripts.php'); ?>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">

@@ -28,8 +28,8 @@
                         <h5 class="card-title text-center font-weight-bold">Iniciar Sesión</h5>
                         <form class="needs-validation" novalidate>
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                                    aria-describedby="basic-addon2" required>
+                                <input id="email" type="email" class="form-control" placeholder="Email"
+                                    aria-label="Email" aria-describedby="basic-addon2" required>
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">@</span>
                                 </div>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Contraseña"
+                                <input id="password" type="password" class="form-control" placeholder="Contraseña"
                                     aria-label="Contraseña" aria-describedby="basic-addon2" required>
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">🔐</span>
@@ -48,35 +48,27 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-sm-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        <label class="form-check-label" for="gridCheck1">
-                                            Recuérdame
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
                                 <div class="col-sm-12">
                                     <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar
                                         Sesión</button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <button class="btn btn-lg btn-secondary btn-block btn-sm" onclick="navigateToRegister()">Registro</button>
-                                    <button class="btn btn-lg btn-light btn-block btn-sm" type="submit">Olvidé mi
-                                        contraseña</button>
-                                </div>
-                            </div>
                         </form>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-lg btn-secondary btn-block btn-sm"
+                                    onclick="navigateToRegister()">Registro</button>
+                                <button class="btn btn-lg btn-light btn-block btn-sm" type="submit">Olvidé mi
+                                    contraseña</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <?php include('../configuration/scripts.php'); ?>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="../controllers/login.js"></script>
 </body>
 
