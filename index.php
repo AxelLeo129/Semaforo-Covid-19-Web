@@ -360,7 +360,8 @@
                                 la información necesaria.
                             </p>
 
-                            <button type="button" class="btn btn-info">Ver Establecimientos</button>
+                            <a class="btn btn-info" href="/semaforo-covid-web/views/places.php"
+                                style="color: white;">Ver Establecimientos</a>
                             <br>
                             <br>
                             <a class="btn btn-secondary" href="/semaforo-covid-web/views/register.php"
